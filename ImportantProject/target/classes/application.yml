@@ -35,6 +35,19 @@ spring:
     time-zone: GMT+8
   profiles:
     include: dev
+  jpa:
+    database: 0;
+  redis:
+    host:  127.0.0.1
+    password:
+    port: 6379
+    timeout: 10000m
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1m
+        max-idle: 8
+        min-idle: 0
 swagger:
   enable: true
 mybatis-plus:
@@ -59,3 +72,4 @@ jwt:
 file:
   updatePath: D:\ImportantProject\fileData\png\  #文件上传路径  C:/Users/86181/Desktop/qdupload/
   viewPath: png #文件访问路径
+

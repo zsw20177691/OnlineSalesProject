@@ -24,19 +24,25 @@ public class User implements Serializable {
 
     @ApiModelProperty("UUID")
     @TableId(value = "uuid",type = IdType.ASSIGN_UUID)
-    @NotEmpty
-    @NotNull
     private String  uuid;
 
     @ApiModelProperty("用户名")
-    @NotEmpty
-    @NotNull
     @TableField(value = "username")
     private String  username;
 
     @ApiModelProperty("密码")
-    @NotEmpty
-    @NotNull
     @TableField(value = "password")
     private String  password;
+
+    @ApiModelProperty("用户类型")
+    @TableField(value = "user_type")
+    private Integer userType;
+
+    @ApiModelProperty("电话号码")
+    @TableField(value = "telephone")
+    private String telephone;
+
+    @ApiModelProperty("头像url")
+    @TableField(value = "url")
+    private String url;
 }

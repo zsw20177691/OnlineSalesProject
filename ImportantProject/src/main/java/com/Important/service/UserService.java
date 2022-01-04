@@ -1,5 +1,6 @@
 package com.Important.service;
 
+import com.Important.dto.UserDto;
 import com.Important.vo.UserVo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,4 +16,10 @@ public interface UserService {
      * @return 带token的用户登录信息
      */
     UserVo login(String username,String   password);
+
+    /**
+     * 用户注册
+     * @param userDto
+     */
+    void userRegistration(UserDto   userDto);
 }

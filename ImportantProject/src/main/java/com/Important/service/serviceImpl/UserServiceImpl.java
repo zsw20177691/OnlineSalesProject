@@ -1,13 +1,11 @@
 package com.Important.service.serviceImpl;
 
 import com.Important.dto.LoginUserDto;
+import com.Important.dto.UserDto;
 import com.Important.entity.User;
 import com.Important.mapper.UserMapper;
 import com.Important.service.UserService;
-import com.Important.utils.EncryptionUtil;
-import com.Important.utils.ExceptionResult;
-import com.Important.utils.GlobalExceptionInterceptor;
-import com.Important.utils.JwtUserLogin;
+import com.Important.utils.*;
 import com.Important.vo.UserVo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +26,8 @@ public class UserServiceImpl implements UserService {
     @Resource
     private GlobalExceptionInterceptor globalExceptionInterceptor;
 
+
+
     @Override
     public UserVo login(String username, String   password){
         UserVo userVo = new UserVo();
@@ -40,6 +40,24 @@ public class UserServiceImpl implements UserService {
         userVo.setToken(jwtUserLogin.createToken(loginUserDto));
         return userVo;
     }
+
+    @Override
+    public void userRegistration(UserDto userDto) {
+        isUserTelephoneExist(userDto.getTelephone());
+
+    }
+
+
+    /**
+     * 验证点号码是否被注册
+     */
+    public void isUserTelephoneExist(String telephone){
+        User telephone1 = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", telephone));
+        if (!StringUtils.isEmpty(telephone1)){
+            throw new ExceptionResult("此号码号码已经被注册");
+        }
+    }
+
     /**
      * 检查用户登录名是否存在
      */

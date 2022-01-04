@@ -765,3 +765,73 @@
 2021-12-30 15:51:08.123 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
 2021-12-30 15:51:08.123 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
 2021-12-30 15:51:08.234 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2022-01-04 16:54:20.151 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 8332 (D:\OnlineSalesProject\ImportantProject\target\classes started by 你就是下一个大佬 in D:\OnlineSalesProject\ImportantProject)
+2022-01-04 16:54:20.154 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2022-01-04 16:54:21.139 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-04 16:54:21.142 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-04 16:54:21.171 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2022-01-04 16:54:21.275 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'fileEntityMapper' and 'com.Important.mapper.FileEntityMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 16:54:21.275 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 16:54:21.275 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2022-01-04 16:54:21.478 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$731dc9e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-04 16:54:21.864 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2022-01-04 16:54:21.880 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2022-01-04 16:54:21.890 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-01-04 16:54:21.891 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2022-01-04 16:54:21.900 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2022-01-04 16:54:21.901 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-04 16:54:21.901 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-04 16:54:21.914 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-01-04 16:54:22.069 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/ImportanProject] : Initializing Spring embedded WebApplicationContext
+2022-01-04 16:54:22.069 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1825 ms
+2022-01-04 16:54:23.310 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-01-04 16:54:23.450 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-04 16:54:23.791 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2022-01-04 16:54:23.808 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-01-04 16:54:23.861 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2022-01-04 16:54:24.023 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2022-01-04 16:54:24.048 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path '/ImportanProject'
+2022-01-04 16:54:24.051 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.614 seconds (JVM running for 6.818)
+2022-01-04 17:23:23.436 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 22520 (D:\OnlineSalesProject\ImportantProject\target\classes started by 你就是下一个大佬 in D:\OnlineSalesProject\ImportantProject)
+2022-01-04 17:23:23.440 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2022-01-04 17:23:24.474 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-04 17:23:24.476 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-04 17:23:24.499 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2022-01-04 17:23:24.589 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'fileEntityMapper' and 'com.Important.mapper.FileEntityMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 17:23:24.589 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 17:23:24.590 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2022-01-04 17:23:24.844 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98b3dc42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-04 17:23:25.207 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2022-01-04 17:23:25.231 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2022-01-04 17:23:25.246 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-01-04 17:23:25.246 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2022-01-04 17:23:25.257 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2022-01-04 17:23:25.258 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2022-01-04 17:23:25.258 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-04 17:23:25.264 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2022-01-04 17:23:25.487 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/ImportanProject] : Initializing Spring embedded WebApplicationContext
+2022-01-04 17:23:25.487 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1923 ms
+2022-01-04 17:23:26.959 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-01-04 17:23:27.148 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-04 17:23:27.615 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2022-01-04 17:23:27.633 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-01-04 17:23:27.675 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2022-01-04 17:23:27.862 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2022-01-04 17:23:27.889 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path '/ImportanProject'
+2022-01-04 17:23:27.891 INFO  [main] com.Important.WebApplication : Started WebApplication in 5.175 seconds (JVM running for 6.245)
+2022-01-04 17:40:04.753 INFO  [main] AssertTest.AssertTest : Starting AssertTest on LAPTOP-VJMOVH20 with PID 9064 (started by 你就是下一个大佬 in D:\OnlineSalesProject\ImportantProject)
+2022-01-04 17:40:04.755 INFO  [main] AssertTest.AssertTest : The following profiles are active: dev
+2022-01-04 17:40:06.296 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-01-04 17:40:06.300 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-01-04 17:40:06.328 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2022-01-04 17:40:06.454 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'fileEntityMapper' and 'com.Important.mapper.FileEntityMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 17:40:06.455 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2022-01-04 17:40:06.455 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2022-01-04 17:40:06.846 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0c78ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-04 17:40:08.707 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-01-04 17:40:09.362 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-04 17:40:10.164 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2022-01-04 17:40:10.195 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-01-04 17:40:10.241 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2022-01-04 17:40:10.489 INFO  [main] AssertTest.AssertTest : Started AssertTest in 6.613 seconds (JVM running for 7.786)
+2022-01-04 17:40:11.111 INFO  [Thread-2] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Shutting down ExecutorService 'applicationTaskExecutor'
