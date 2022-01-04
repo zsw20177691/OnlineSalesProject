@@ -1,0 +1,64 @@
+集合两大体系长度可变，更加方便开发：
+	Map Collection 
+		Collection:三个子接口 分别List set Queue，List Queue，有序可以重复 Set元素无序不可以重复
+			List: 有ArrayList、LinkedList 两个实现类；set:有HashSet实现类
+				ArrayList,数组队列 线程不安全集合，可以序列化，快速随机访问存储元素的功能，可以实现克隆方法
+					特点：可以拓展，有序集合，插入元素可以为null  增删改查效率更高 线程不安全
+				LinekedList:底层通过链表来实现，随着元素增加不断向链表的后端增加节点，为双向对列，先进先出 ，先入后出都允许。增删效率高，查找修改效率低
+					二者常用方法：
+						add  增加 remove 删除 set修改 get获取 sezi查看数组长度   指定位置插入元素add(index,element)
+							遍历方法：foreach for循环
+		Map:以key-value的形式存在，其中key必须唯一，主要有hashMap、HasTable、treeMap三个实现类。
+			HashMap:底层是数组+链表+红黑树结构
+				特点：存储数据以键值对的方式存储，
+					常用方法：增加元素 put(key,value) 删除 remove(key)  清空clear()
+						foreach
+IO:
+	基本概念：输入流：流向内存的 输出流：流出内存  根据数据类型：分为 字节流（以字节为单位，读写的数据流）字符流（以字符为单位读写数据的流）
+				字节输入流：inputStream 字节输出流 OutputStream  字符输入流 Reader 字符输出流 Writer
+					两者共性方法：
+						1、 public void close() ：关闭此输出流并释放与此流相关联的任何系统资源。
+						2、 public void flush() ：刷新此输出流并强制任何缓冲的输出字节被写出。
+						3、 public void write(byte[] b)：将 b.length个字节从指定的字节数组写入此输出流。
+						4、 public void write(byte[] b, int off, int len) ：从指定的字节数组写入 len字节，从偏移量 off开始输出到此输出流。 也就是说从off个字节数开始读取一直到len个字节结束
+						5、 public abstract void write(int b) ：将指定的字节输出流。
+
+	构造方法：通过绝对路径 ：String path="绝对路径"  File file=new File(Path)  通过父路径和子路径：String="父.文件夹路径" String="子.文件路径"  File file=new File(父，子)
+				常用方法：getAbsolutePath()：返回file的绝对路径字符串；getpath()将file转换为路径字符串名； length()返回文件长度；getName()返回文件名字
+				常用判断方法：exists()判断文件或者目录是否存在；isDirectory()判断是否为目录；isfile() 判断是否为文件
+				创建文件删除文件方法：createNewFile()文件不存在则会被创建返回true，文件存在，文件不创造返回false
+				delete() ：删除由此File表示的文件或目录。mkdir() ：创建由此File表示的目录。mkdirs() ：创建由此File表示的目录，包括任何必需但不存在的父目录。
+				目录遍历：list() ：返回一个String数组，表示该File目录中的所有子文件或目录。listFiles() ：返回一个File数组，表示该File目录中的所有的子文件或目录。
+多线程：
+反射：
+关键字：
+关键字差异：
+面向对象理解：
+常用方法：
+异常处理：
+servlet:
+Ioc:
+	概念
+	注解
+AOp：
+	概念：
+	注解：
+springMVC
+	环境配置：
+	注解：
+Mybatis:
+	环境配置：
+	注解：
+JavaScript：
+	常用关键词：
+	常用方法：
+linux系统常用命令：
+Xshell系统命令：
+Mysql数据库:
+	数据库优化：
+	数据库常用命令：
+	多表查询：
+redis：
+数据结构：
+jvm虚拟机:
+

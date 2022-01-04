@@ -1,0 +1,75 @@
+#端口号
+server:
+       port: 8090
+       servlet:
+          context-path: /ImportanProject
+#输出mybatis日志
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#servlet配置是否可以传输文件，限制文件传输大小，总数据大小
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+#创建数据源 ,加载数据库驱动
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/importproject?useSSL=false&allowPublicKeyRetrieval=true&allowMultiQueries=true&serverTimezone=GMT%2B8
+      username: root
+      password: password
+      #连接池设置
+      hikari:
+        connection-timeout: 60000 #最长等待时间
+        idle-timeout: 60000 #最长闲置时间
+        login-timeout: 5  #指定连接数据库的超时时间.
+        max-lifetime: 60000 #设置connnection再连接池的最长存活时间
+        maximum-pool-size: 200  #最大连接数量
+        minimum-idle: 10 #最小空闲连接数量
+        read-only: false #当使用Hikari connection pool时，是否标记数据源只读
+        validation-timeout: 3000 #最长活动时间
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  profiles:
+    include: dev
+  jpa:
+    database: 0;
+  redis:
+    host:  127.0.0.1
+    password:
+    port: 6379
+    timeout: 10000m
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1m
+        max-idle: 8
+        min-idle: 0
+swagger:
+  enable: true
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    auto-mapping-behavior: full
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/**/**Mapper.xml
+  global-config:
+    # 逻辑删除配置
+    db-config:
+      # 删除前
+      logic-not-delete-value: 0
+      # 删除后
+      logic-delete-value: 1
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug
+jwt:
+  intervals: 1
+  secret: Chen18173425291
+file:
+  updatePath: D:\ImportantProject\fileData\png\  #文件上传路径  C:/Users/86181/Desktop/qdupload/
+  viewPath: png #文件访问路径
+

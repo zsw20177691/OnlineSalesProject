@@ -1,0 +1,23 @@
+2021-12-21 11:50:20.607 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 8488 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-21 11:50:20.609 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-21 11:50:21.145 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important]' package. Please check your configuration.
+2021-12-21 11:50:21.202 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-21 11:50:21.326 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e60d0367] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-21 11:50:21.530 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-21 11:50:21.539 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-21 11:50:21.545 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-21 11:50:21.545 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-21 11:50:21.550 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-21 11:50:21.550 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-21 11:50:21.550 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-21 11:50:21.552 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-21 11:50:21.634 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-21 11:50:21.634 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 967 ms
+2021-12-21 11:50:21.882 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-21 11:50:22.007 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-21 11:50:22.501 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-21 11:50:22.512 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-21 11:50:22.536 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-21 11:50:22.586 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-21 11:50:22.603 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-21 11:50:22.606 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.387 seconds (JVM running for 3.066)

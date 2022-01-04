@@ -1,0 +1,1241 @@
+2021-12-27 09:23:34.893 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 12856 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 09:23:34.896 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 09:23:35.556 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 09:23:35.556 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 09:23:35.679 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca7435c2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 09:23:35.908 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 09:23:35.918 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:23:35.924 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 09:23:35.925 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 09:23:35.930 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 09:23:35.930 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 09:23:35.930 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 09:23:35.933 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 09:23:36.009 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 09:23:36.009 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1047 ms
+2021-12-27 09:23:36.802 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 09:23:36.885 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 09:23:37.015 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 09:23:37.029 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 09:23:37.054 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 09:23:37.143 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:23:37.158 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 09:23:37.160 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.688 seconds (JVM running for 3.376)
+2021-12-27 09:23:49.081 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 09:23:49.081 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 09:23:49.086 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2021-12-27 09:23:53.626 INFO  [http-nio-8090-exec-5] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 09:23:53.705 WARN  [http-nio-8090-exec-5] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 09:23:53.705 INFO  [http-nio-8090-exec-5] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 09:23:53.832 INFO  [http-nio-8090-exec-5] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 09:23:53.890 INFO  [http-nio-8090-exec-5] com.Important.service.serviceImpl.UserServiceImpl : null用户对象
+2021-12-27 09:24:05.564 ERROR [http-nio-8090-exec-5] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ExceptionResult(status=400 BAD_REQUEST, msg=用户不存在，请先注册, timestamp=1640568233891)] with root cause
+com.Important.utils.ExceptionResult: null
+	at com.Important.utils.GlobalExceptionInterceptor.build(GlobalExceptionInterceptor.java:43)
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:51)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:37)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 09:29:52.466 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 10948 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 09:29:52.469 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 09:29:53.085 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 09:29:53.085 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 09:29:53.208 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$50f69a91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 09:29:53.422 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 09:29:53.431 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:29:53.438 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 09:29:53.438 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 09:29:53.443 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 09:29:53.444 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 09:29:53.444 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 09:29:53.446 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 09:29:53.526 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 09:29:53.526 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 996 ms
+2021-12-27 09:29:54.306 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 09:29:54.392 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 09:29:54.513 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 09:29:54.523 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 09:29:54.551 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 09:29:54.645 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:29:54.660 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 09:29:54.662 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.605 seconds (JVM running for 3.265)
+2021-12-27 09:37:27.953 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 2588 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 09:37:27.955 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 09:37:28.567 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 09:37:28.568 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 09:37:28.682 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b41d4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 09:37:28.891 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 09:37:28.900 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:37:28.906 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 09:37:28.906 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 09:37:28.912 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 09:37:28.912 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 09:37:28.912 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 09:37:28.914 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 09:37:28.991 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 09:37:28.991 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 971 ms
+2021-12-27 09:37:29.756 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 09:37:29.845 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 09:37:29.962 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 09:37:29.973 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 09:37:29.996 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 09:37:30.080 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:37:30.095 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 09:37:30.097 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.563 seconds (JVM running for 3.21)
+2021-12-27 09:37:41.975 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 09:37:41.976 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 09:37:41.980 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 4 ms
+2021-12-27 09:37:42.059 INFO  [http-nio-8090-exec-1] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 09:37:42.104 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 09:37:42.105 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 09:37:42.177 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 09:37:42.220 ERROR [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ExceptionResult(status=400 BAD_REQUEST, msg=用户不存在，请先注册, timestamp=1640569062212)] with root cause
+com.Important.utils.ExceptionResult: null
+	at com.Important.utils.GlobalExceptionInterceptor.build(GlobalExceptionInterceptor.java:39)
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 09:39:58.592 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 17100 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 09:39:58.594 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 09:39:59.221 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 09:39:59.222 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 09:39:59.342 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a06dce17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 09:39:59.542 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 09:39:59.551 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:39:59.557 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 09:39:59.557 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 09:39:59.561 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 09:39:59.562 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 09:39:59.562 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 09:39:59.564 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 09:39:59.640 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 09:39:59.640 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 988 ms
+2021-12-27 09:40:00.395 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 09:40:00.476 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 09:40:00.596 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 09:40:00.607 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 09:40:00.630 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 09:40:00.714 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:40:00.729 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 09:40:00.731 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.541 seconds (JVM running for 3.163)
+2021-12-27 09:40:11.074 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 09:40:11.074 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 09:40:11.079 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2021-12-27 09:40:11.170 INFO  [http-nio-8090-exec-1] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 09:40:11.214 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 09:40:11.214 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 09:40:11.284 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 09:40:11.325 ERROR [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ExceptionResult(status=400 BAD_REQUEST, msg=用户不存在，请先注册, timestamp=1640569211319)] with root cause
+com.Important.utils.ExceptionResult: null
+	at com.Important.utils.GlobalExceptionInterceptor.build(GlobalExceptionInterceptor.java:39)
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 09:40:24.452 INFO  [http-nio-8090-exec-2] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 09:40:30.756 ERROR [http-nio-8090-exec-2] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ExceptionResult(status=400 BAD_REQUEST, msg=用户不存在，请先注册, timestamp=1640569224456)] with root cause
+com.Important.utils.ExceptionResult: null
+	at com.Important.utils.GlobalExceptionInterceptor.build(GlobalExceptionInterceptor.java:39)
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 09:45:57.527 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 1988 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 09:45:57.557 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 09:45:58.133 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 09:45:58.133 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 09:45:58.247 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad150deb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 09:45:58.448 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 09:45:58.457 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:45:58.463 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 09:45:58.463 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 09:45:58.468 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 09:45:58.468 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 09:45:58.468 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 09:45:58.470 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 09:45:58.545 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 09:45:58.545 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 953 ms
+2021-12-27 09:45:59.293 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 09:45:59.378 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 09:45:59.495 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 09:45:59.505 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 09:45:59.529 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 09:45:59.608 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 09:45:59.624 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 09:45:59.626 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.508 seconds (JVM running for 3.144)
+2021-12-27 09:46:17.680 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 09:46:17.680 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 09:46:17.685 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2021-12-27 09:46:17.773 INFO  [http-nio-8090-exec-1] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 09:46:17.828 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 09:46:17.829 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 09:46:17.968 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 09:46:18.050 ERROR [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ExceptionResult(status=400 BAD_REQUEST, msg=用户不存在，请先注册, timestamp=1640569578043)] with root cause
+com.Important.utils.ExceptionResult: null
+	at com.Important.utils.ExceptionResult.build(ExceptionResult.java:23)
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 10:05:02.917 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 13752 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 10:05:02.919 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 10:05:03.550 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 10:05:03.550 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 10:05:03.664 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6203ddb8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 10:05:03.865 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 10:05:03.874 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 10:05:03.880 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 10:05:03.880 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 10:05:03.885 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 10:05:03.885 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 10:05:03.885 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 10:05:03.887 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 10:05:03.961 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 10:05:03.961 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 981 ms
+2021-12-27 10:05:04.701 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 10:05:04.784 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 10:05:04.903 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 10:05:04.915 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 10:05:04.939 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 10:05:05.016 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 10:05:05.031 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 10:05:05.033 INFO  [main] com.Important.WebApplication : Started WebApplication in 2.502 seconds (JVM running for 3.131)
+2021-12-27 10:06:43.712 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 10:06:43.712 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 10:06:43.717 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 5 ms
+2021-12-27 10:06:43.810 INFO  [http-nio-8090-exec-1] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 10:06:43.853 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 10:06:43.853 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 10:06:43.923 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 10:06:43.967 ERROR [http-nio-8090-exec-1] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.Important.utils.ExceptionResult: 用户不存在，请先注册] with root cause
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 10:26:47.773 INFO  [http-nio-8090-exec-2] com.Important.controller.UserController : 收到参数;账号123 密码：string
+2021-12-27 10:26:47.779 ERROR [http-nio-8090-exec-2] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.Important.utils.ExceptionResult: 用户不存在，请先注册] with root cause
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 10:27:09.583 WARN  [http-nio-8090-exec-3] o.s.w.s.m.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 4, column: 2]]
+2021-12-27 10:27:21.565 WARN  [http-nio-8090-exec-4] o.s.w.s.m.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): expected a value; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): expected a value
+ at [Source: (PushbackInputStream); line: 4, column: 2]]
+2021-12-27 10:27:30.823 WARN  [http-nio-8090-exec-5] o.s.w.s.m.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public void com.Important.controller.UserController.login(com.Important.dto.LoginUserDto): [Field error in object 'loginUserDto' on field 'username': rejected value []; codes [NotEmpty.loginUserDto.username,NotEmpty.username,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUserDto.username,username]; arguments []; default message [username]]; default message [用户名不能为空字符串]] ]
+2021-12-27 10:27:42.025 WARN  [http-nio-8090-exec-6] o.s.w.s.m.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public void com.Important.controller.UserController.login(com.Important.dto.LoginUserDto) with 2 errors: [Field error in object 'loginUserDto' on field 'password': rejected value []; codes [NotEmpty.loginUserDto.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUserDto.password,password]; arguments []; default message [password]]; default message [密码不能为空字符串]] [Field error in object 'loginUserDto' on field 'username': rejected value []; codes [NotEmpty.loginUserDto.username,NotEmpty.username,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUserDto.username,username]; arguments []; default message [username]]; default message [用户名不能为空字符串]] ]
+2021-12-27 11:59:57.954 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s32ms780µs600ns).
+2021-12-27 12:34:27.762 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m29s635ms218µs600ns).
+2021-12-27 13:15:57.906 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m29s973ms63µs900ns).
+2021-12-27 13:34:05.081 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m7s175ms62µs800ns).
+2021-12-27 14:54:48.246 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 1712 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 14:54:48.249 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 14:54:49.206 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 14:54:49.207 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 14:54:49.399 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7b4f34cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 14:54:49.722 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 14:54:49.738 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:54:49.747 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 14:54:49.748 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 14:54:49.754 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 14:54:49.754 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 14:54:49.754 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 14:54:49.758 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 14:54:49.898 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:54:49.898 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1560 ms
+2021-12-27 14:54:51.198 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 14:54:51.315 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 14:54:51.511 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 14:54:51.530 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 14:54:51.566 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 14:54:51.710 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:54:51.736 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 14:54:51.740 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.179 seconds (JVM running for 5.186)
+2021-12-27 14:54:58.360 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:54:58.360 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:54:58.368 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2021-12-27 14:54:58.388 INFO  [http-nio-8090-exec-1] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 14:55:11.178 INFO  [http-nio-8090-exec-5] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 14:56:46.633 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 18060 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 14:56:46.636 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 14:56:47.586 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 14:56:47.587 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 14:56:47.765 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$38de5a24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 14:56:48.064 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 14:56:48.077 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:56:48.085 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 14:56:48.085 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 14:56:48.091 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 14:56:48.092 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 14:56:48.092 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 14:56:48.095 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 14:56:48.239 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:56:48.240 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1510 ms
+2021-12-27 14:56:49.339 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 14:56:49.473 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 14:56:49.654 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 14:56:49.670 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 14:56:49.708 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 14:56:49.855 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:56:49.887 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 14:56:49.892 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.904 seconds (JVM running for 4.925)
+2021-12-27 14:57:23.234 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:57:23.234 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:57:23.241 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
+2021-12-27 14:57:48.717 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 19200 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 14:57:48.720 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 14:57:49.737 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 14:57:49.737 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 14:57:49.943 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67167771] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 14:57:50.342 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 14:57:50.367 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:57:50.383 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 14:57:50.384 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 14:57:50.394 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 14:57:50.395 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 14:57:50.395 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 14:57:50.399 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 14:57:50.552 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:57:50.553 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1741 ms
+2021-12-27 14:57:51.846 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 14:57:51.977 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 14:57:52.153 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 14:57:52.168 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 14:57:52.201 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 14:57:52.331 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:57:52.354 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 14:57:52.357 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.318 seconds (JVM running for 5.352)
+2021-12-27 14:57:58.543 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:57:58.543 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:57:58.550 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
+2021-12-27 14:57:58.712 WARN  [http-nio-8090-exec-1] o.s.w.s.m.support.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.Important.vo.UserVo com.Important.controller.UserController.login(com.Important.dto.LoginUserDto) with 2 errors: [Field error in object 'loginUserDto' on field 'password': rejected value []; codes [NotEmpty.loginUserDto.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUserDto.password,password]; arguments []; default message [password]]; default message [密码不能为空字符串]] [Field error in object 'loginUserDto' on field 'username': rejected value []; codes [NotEmpty.loginUserDto.username,NotEmpty.username,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [loginUserDto.username,username]; arguments []; default message [username]]; default message [用户名不能为空字符串]] ]
+2021-12-27 14:59:10.052 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 10676 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 14:59:10.055 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 14:59:10.965 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 14:59:10.965 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 14:59:11.153 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d9dd3a1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 14:59:11.458 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 14:59:11.473 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:59:11.483 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 14:59:11.484 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 14:59:11.490 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 14:59:11.490 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 14:59:11.490 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 14:59:11.493 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 14:59:11.640 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 14:59:11.641 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1496 ms
+2021-12-27 14:59:12.786 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 14:59:12.905 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 14:59:13.082 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 14:59:13.099 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 14:59:13.134 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 14:59:13.269 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 14:59:13.302 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 14:59:13.305 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.906 seconds (JVM running for 5.0)
+2021-12-27 14:59:26.336 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 14:59:26.336 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 14:59:26.342 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 6 ms
+2021-12-27 15:00:26.744 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 11588 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:00:26.747 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:00:27.727 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:00:27.728 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:00:27.917 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9edc1122] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:00:28.276 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:00:28.295 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:00:28.311 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:00:28.311 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:00:28.317 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:00:28.318 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:00:28.318 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:00:28.321 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:00:28.527 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:00:28.528 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1683 ms
+2021-12-27 15:00:29.885 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:00:30.054 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:00:30.284 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:00:30.302 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:00:30.344 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:00:30.511 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:00:30.544 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:00:30.548 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.435 seconds (JVM running for 5.443)
+2021-12-27 15:00:47.308 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:00:47.308 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:00:47.316 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2021-12-27 15:00:47.333 INFO  [http-nio-8090-exec-1] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:00:51.208 INFO  [http-nio-8090-exec-3] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:00:53.635 INFO  [http-nio-8090-exec-2] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:01:40.742 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 19108 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:01:40.745 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:01:41.666 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:01:41.666 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:01:41.872 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cb3c8ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:01:42.170 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:01:42.183 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:01:42.192 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:01:42.192 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:01:42.198 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:01:42.198 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:01:42.198 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:01:42.200 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:01:42.342 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:01:42.343 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1508 ms
+2021-12-27 15:01:43.435 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:01:43.551 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:01:43.715 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:01:43.730 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:01:43.765 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:01:43.899 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:01:43.922 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:01:43.926 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.826 seconds (JVM running for 4.819)
+2021-12-27 15:01:48.801 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:01:48.801 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:01:48.808 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
+2021-12-27 15:02:51.125 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 18996 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:02:51.127 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:02:52.112 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:02:52.112 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:02:52.303 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b17166d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:02:52.606 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:02:52.621 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:02:52.630 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:02:52.631 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:02:52.638 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:02:52.638 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:02:52.638 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:02:52.642 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:02:52.774 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:02:52.775 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1548 ms
+2021-12-27 15:02:54.034 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:02:54.191 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:02:54.444 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:02:54.461 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:02:54.499 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:02:54.690 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:02:54.717 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:02:54.722 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.253 seconds (JVM running for 5.258)
+2021-12-27 15:03:37.423 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:03:37.424 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:03:37.433 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2021-12-27 15:03:41.613 INFO  [http-nio-8090-exec-5] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:20:44.106 INFO  [http-nio-8090-exec-8] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:34:42.462 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 12692 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:34:42.465 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:34:43.450 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:34:43.451 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:34:43.636 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6c68c88e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:34:43.938 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:34:43.951 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:34:43.960 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:34:43.960 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:34:43.966 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:34:43.967 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:34:43.967 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:34:43.969 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:34:44.116 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:34:44.117 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1550 ms
+2021-12-27 15:34:45.257 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:34:45.371 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:34:45.543 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:34:45.559 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:34:45.593 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:34:45.733 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:34:45.756 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:34:45.759 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.964 seconds (JVM running for 4.993)
+2021-12-27 15:34:58.807 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:34:58.808 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:34:58.819 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 11 ms
+2021-12-27 15:34:58.850 INFO  [http-nio-8090-exec-1] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:35:40.105 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 16708 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:35:40.109 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:35:40.995 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:35:40.996 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:35:41.176 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a3fd142] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:35:41.470 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:35:41.482 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:35:41.491 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:35:41.491 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:35:41.497 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:35:41.497 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:35:41.497 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:35:41.499 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:35:41.640 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:35:41.640 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1436 ms
+2021-12-27 15:35:42.747 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:35:42.866 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:35:43.035 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:35:43.051 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:35:43.087 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:35:43.221 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:35:43.245 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:35:43.249 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.774 seconds (JVM running for 4.765)
+2021-12-27 15:35:48.836 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:35:48.836 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:35:48.843 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
+2021-12-27 15:35:48.861 INFO  [http-nio-8090-exec-1] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:38:05.706 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 13788 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 15:38:05.710 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 15:38:06.645 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 15:38:06.653 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 15:38:06.833 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf6c9cb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 15:38:07.128 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 15:38:07.142 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:38:07.150 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 15:38:07.151 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 15:38:07.157 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 15:38:07.157 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 15:38:07.157 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 15:38:07.160 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 15:38:07.285 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 15:38:07.285 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1472 ms
+2021-12-27 15:38:08.414 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 15:38:08.533 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 15:38:08.731 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 15:38:08.746 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 15:38:08.782 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 15:38:08.915 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 15:38:08.943 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 15:38:08.949 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.902 seconds (JVM running for 4.906)
+2021-12-27 15:38:17.124 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 15:38:17.125 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 15:38:17.133 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 8 ms
+2021-12-27 15:38:17.149 INFO  [http-nio-8090-exec-1] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:38:17.171 INFO  [http-nio-8090-exec-3] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 15:39:07.213 INFO  [http-nio-8090-exec-2] com.Important.controller.UserController : 收到参数;账号string 密码：string
+2021-12-27 15:39:07.279 WARN  [http-nio-8090-exec-2] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 15:39:07.279 INFO  [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 15:39:07.399 INFO  [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 15:39:16.150 INFO  [http-nio-8090-exec-4] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 20:17:00.257 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 18408 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 20:17:00.261 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 20:17:01.530 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 20:17:01.530 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 20:17:01.737 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85324c7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 20:17:02.142 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 20:17:02.156 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 20:17:02.164 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 20:17:02.164 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 20:17:02.171 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 20:17:02.171 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 20:17:02.171 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 20:17:02.185 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 20:17:02.285 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 20:17:02.285 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1934 ms
+2021-12-27 20:17:03.564 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 20:17:03.683 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 20:17:03.867 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 20:17:03.886 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 20:17:03.923 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 20:17:04.066 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 20:17:04.090 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 20:17:04.093 INFO  [main] com.Important.WebApplication : Started WebApplication in 4.487 seconds (JVM running for 6.64)
+2021-12-27 20:17:34.466 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 20:17:34.467 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 20:17:34.482 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 15 ms
+2021-12-27 20:18:03.582 WARN  [http-nio-8090-exec-6] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 20:18:03.582 INFO  [http-nio-8090-exec-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 20:18:03.792 INFO  [http-nio-8090-exec-6] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 20:18:17.175 INFO  [http-nio-8090-exec-7] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 20:18:17.193 INFO  [http-nio-8090-exec-8] com.Important.config.HandLerConfig : java.lang.NullPointerException
+2021-12-27 20:18:29.298 INFO  [http-nio-8090-exec-9] com.Important.controller.UserController : 收到参数;账号string33 密码：string
+2021-12-27 20:18:29.309 ERROR [http-nio-8090-exec-9] com.Important.utils.ExceptionControllerAdvice : 用户不存在，请先注册
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 20:19:10.744 INFO  [http-nio-8090-exec-3] com.Important.controller.UserController : 收到参数;账号string33 密码：string
+2021-12-27 20:19:10.753 ERROR [http-nio-8090-exec-3] com.Important.utils.ExceptionControllerAdvice : 用户不存在，请先注册
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 20:19:12.343 INFO  [http-nio-8090-exec-4] com.Important.controller.UserController : 收到参数;账号string33 密码：string
+2021-12-27 20:19:12.348 ERROR [http-nio-8090-exec-4] com.Important.utils.ExceptionControllerAdvice : 用户不存在，请先注册
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 20:19:18.693 INFO  [http-nio-8090-exec-9] com.Important.controller.UserController : 收到参数;账号string33 密码：string
+2021-12-27 20:19:18.697 ERROR [http-nio-8090-exec-9] com.Important.utils.ExceptionControllerAdvice : 用户不存在，请先注册
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-27 20:19:32.243 INFO  [main] com.Important.WebApplication : Starting WebApplication on LAPTOP-VJMOVH20 with PID 17268 (D:\ImportantProject\target\classes started by 你就是下一个大佬 in D:\ImportantProject)
+2021-12-27 20:19:32.246 INFO  [main] com.Important.WebApplication : The following profiles are active: dev
+2021-12-27 20:19:33.147 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : Skipping MapperFactoryBean with name 'userMapper' and 'com.Important.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2021-12-27 20:19:33.147 WARN  [main] org.mybatis.spring.mapper.ClassPathMapperScanner : No MyBatis mapper was found in '[com.Important.mapper]' package. Please check your configuration.
+2021-12-27 20:19:33.328 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab24ca78] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-27 20:19:33.624 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8090 (http)
+2021-12-27 20:19:33.639 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8090"]
+2021-12-27 20:19:33.647 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2021-12-27 20:19:33.647 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-12-27 20:19:33.654 INFO  [main] org.apache.catalina.core.AprLifecycleListener : Loaded APR based Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-12-27 20:19:33.654 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-12-27 20:19:33.654 INFO  [main] org.apache.catalina.core.AprLifecycleListener : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-12-27 20:19:33.657 INFO  [main] org.apache.catalina.core.AprLifecycleListener : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-12-27 20:19:33.751 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2021-12-27 20:19:33.751 INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 1417 ms
+2021-12-27 20:19:34.921 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-12-27 20:19:35.037 INFO  [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-27 20:19:35.208 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-27 20:19:35.223 INFO  [main] s.d.s.web.plugins.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-27 20:19:35.258 INFO  [main] s.d.spring.web.scanners.ApiListingReferenceScanner : Scanning for api listing references
+2021-12-27 20:19:35.396 INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8090"]
+2021-12-27 20:19:35.419 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8090 (http) with context path ''
+2021-12-27 20:19:35.423 INFO  [main] com.Important.WebApplication : Started WebApplication in 3.821 seconds (JVM running for 4.839)
+2021-12-27 20:19:40.317 INFO  [http-nio-8090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-27 20:19:40.317 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2021-12-27 20:19:40.324 INFO  [http-nio-8090-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 7 ms
+2021-12-27 20:19:40.453 INFO  [http-nio-8090-exec-1] com.Important.controller.UserController : 收到参数;账号string33 密码：string
+2021-12-27 20:19:40.525 WARN  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariConfig : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2021-12-27 20:19:40.525 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-12-27 20:19:40.640 INFO  [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-12-27 20:19:40.691 ERROR [http-nio-8090-exec-1] com.Important.utils.ExceptionControllerAdvice : 用户不存在，请先注册
+com.Important.utils.ExceptionResult: 用户不存在，请先注册
+	at com.Important.service.serviceImpl.UserServiceImpl.isUserExist(UserServiceImpl.java:49)
+	at com.Important.service.serviceImpl.UserServiceImpl.login(UserServiceImpl.java:34)
+	at com.Important.controller.UserController.login(UserController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
