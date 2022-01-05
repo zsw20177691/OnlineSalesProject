@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
             throw  new ExceptionResult("用户类型错误");
         }
         User build = User.builder()
-                .password(userDto.getPawword())
+                .password(  EncryptionUtil.getMD5Str(userDto.getPawword()))
                 .telephone(userDto.getTelephone())
                 .url(userDto.getUrl())
                 .userType(userDto.getUserType())
