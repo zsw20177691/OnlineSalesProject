@@ -3,6 +3,7 @@ package com.Important.service.serviceImpl;
 import com.Important.dto.LoginUserDto;
 import com.Important.dto.UserDto;
 import com.Important.entity.User;
+import com.Important.enums.UserType;
 import com.Important.mapper.UserMapper;
 import com.Important.service.UserService;
 import com.Important.utils.*;
@@ -44,7 +45,18 @@ public class UserServiceImpl implements UserService {
     @Override
     public void userRegistration(UserDto userDto) {
         isUserTelephoneExist(userDto.getTelephone());
-
+        UserType userType = UserType.getUserType(userDto.getUserType());
+        if (StringUtils.isEmpty(userType)){
+            throw  new ExceptionResult("用户类型错误");
+        }
+        User build = User.builder()
+                .password(userDto.getPawword())
+                .telephone(userDto.getTelephone())
+                .url(userDto.getUrl())
+                .userType(userDto.getUserType())
+                .username(userDto.getUserName())
+                .build();
+        userMapper.insert(build);
     }
 
 
@@ -54,7 +66,7 @@ public class UserServiceImpl implements UserService {
     public void isUserTelephoneExist(String telephone){
         User telephone1 = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", telephone));
         if (!StringUtils.isEmpty(telephone1)){
-            throw new ExceptionResult("此号码号码已经被注册");
+            throw new ExceptionResult("此号码号码已被注册");
         }
     }
 

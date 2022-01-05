@@ -30,7 +30,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(handLerConfig)//注册自定义拦截器
                 .addPathPatterns("/**")//拦截的请求路径
-                .excludePathPatterns("/error","/User/login", "/swagger-ui.html/**","/swagger-resources/**","/swagger-resources","/doc.html","/webjars/**")//排除的请求路径
+                .excludePathPatterns("/error","/User/login","/swagger-ui.html/**","/swagger-resources/**","/swagger-resources","/doc.html","/webjars/**","/User/UserRegistration","/User/VerificationCode")//排除的请求路径
                 .excludePathPatterns("/static/*");
     }
 

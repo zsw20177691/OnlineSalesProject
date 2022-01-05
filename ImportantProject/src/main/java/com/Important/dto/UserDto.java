@@ -12,11 +12,10 @@ import java.io.Serializable;
 import java.security.SecureRandom;
 
 @Data
-@Builder
-public class UserDto implements Serializable {
+public class UserDto implements Serializable{
 
-    private static final long serialVersionUID = 6805547270807322822L;
 
+    private static final long serialVersionUID = 1394100309397993368L;
     @ApiModelProperty(value = "验证码")
     @NotNull(message = "验证码，不能为空")
     @NotEmpty(message = "验证码，不能空字符")
@@ -42,13 +41,15 @@ public class UserDto implements Serializable {
 
 
     @ApiModelProperty(value = "头像url")
-    @NotNull(message = "请选择头像")
-    @NotEmpty(message = "请选择头像")
+//    @NotNull(message = "请选择头像")
+//    @NotEmpty(message = "请选择头像")
     private String  url;
 
 
     @ApiModelProperty(value = "用户类型")
     @NotNull(message = "请选择注册类型")
-    private UserType   userType;
+    private Integer   userType;
+
+
 
 }
