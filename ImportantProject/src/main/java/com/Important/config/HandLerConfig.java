@@ -39,9 +39,9 @@ public class HandLerConfig implements HandlerInterceptor{
             if (token.isEmpty()){
                 return  false;
             }
-            String userName = jwtUserLogin.getUserName(token);
+            String userName = jwtUserLogin.getTelephone(token);
             log.info("用户名"+userName);
-            User username = userMapper.selectOne(new QueryWrapper<User>().eq("username", userName));
+            User username = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", userName));
             if (StringUtils.isEmpty(userName)){
                 return  false;
             }

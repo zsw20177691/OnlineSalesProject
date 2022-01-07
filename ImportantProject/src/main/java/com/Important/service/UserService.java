@@ -1,6 +1,7 @@
 package com.Important.service;
 
 import com.Important.dto.UserDto;
+import com.Important.entity.User;
 import com.Important.vo.UserVo;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,4 +23,10 @@ public interface UserService {
      * @param userDto
      */
     void userRegistration(UserDto   userDto);
+
+    /**
+     *用户修改信息
+     * @param user
+     */
+    void updateUserData(User user);
 }

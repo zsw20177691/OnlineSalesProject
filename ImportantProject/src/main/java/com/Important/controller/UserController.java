@@ -51,10 +51,10 @@ public class UserController {
     @ApiOperation("登录")
     @PostMapping("/login")
     public UserVo login(@RequestBody @Valid LoginUserDto loginUserDto,HttpServletRequest httpServletRequest){
-        log.info("收到参数;账号"+ loginUserDto.getUsername()+" 密码："+loginUserDto.getPassword());
+        log.info("收到参数;账号"+ loginUserDto.getTelephone()+" 密码："+loginUserDto.getPassword());
         HttpSession session = httpServletRequest.getSession();
         session.setMaxInactiveInterval(60);
-        UserVo login = userService.login(loginUserDto.getUsername(), loginUserDto.getPassword());
+        UserVo login = userService.login(loginUserDto.getTelephone(), loginUserDto.getPassword());
         return login;
     }
 
@@ -94,5 +94,14 @@ public class UserController {
         telephone=iphone;
         return randomCode;
     }
+
+    @ApiOperation("修改个人信息")
+    @PostMapping("/UpdateUserData")
+    public ResultVO<T>  updateUserData(@RequestBody User user ){
+        userService.updateUserData(user);
+        return ResponseUtil.ok();
+    }
+
+
 
 }

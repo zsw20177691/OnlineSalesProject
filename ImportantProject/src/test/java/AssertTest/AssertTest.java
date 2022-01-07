@@ -5,6 +5,7 @@ import com.Important.dto.LoginUserDto;
 import com.Important.service.UserService;
 import com.Important.utils.JwtUserLogin;
 import com.Important.utils.SendMessageUtil;
+import com.Important.utils.TimeFormatUtil;
 import com.Important.vo.UserVo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -16,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.time.LocalDateTime;
 import java.util.Random;
 
 
@@ -68,6 +70,14 @@ public class AssertTest  {
         Integer lvfaxxxxxx = SendMessageUtil.send("你就是下一个大佬", "d41d8cd98f00b204e980", "18173425291", "验证码:" + getRandomCode(6));
         System.out.println(SendMessageUtil.getMessage(lvfaxxxxxx));
     }
+
+    @Test
+    public void tetDateTime(){
+        LocalDateTime localDateTime = TimeFormatUtil.nowDateTime();
+        System.out.println(localDateTime);
+    }
+
+
 
 
 

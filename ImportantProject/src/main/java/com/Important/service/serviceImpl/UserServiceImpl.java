@@ -3,6 +3,7 @@ package com.Important.service.serviceImpl;
 import com.Important.dto.LoginUserDto;
 import com.Important.dto.UserDto;
 import com.Important.entity.User;
+import com.Important.enums.StatusType;
 import com.Important.enums.UserType;
 import com.Important.mapper.UserMapper;
 import com.Important.service.UserService;
@@ -30,15 +31,19 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public UserVo login(String username, String   password){
+    public UserVo login(String telephone, String   password){
         UserVo userVo = new UserVo();
-        isUserExist(username);
-        User user1 = userMapper.selectOne(new QueryWrapper<User>().eq("username", username).eq("password", password));
+        isUserExist(telephone);
+        User user1 = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", telephone).eq("password", password));
+        if (user1.getUserStart().equals(StatusType.INVALID.getValue())){
+            throw new ExceptionResult("用户已失效");
+        }
         userVo.setUser(user1);
         LoginUserDto loginUserDto = new LoginUserDto();
-        loginUserDto.setUsername(username);
+        loginUserDto.setTelephone(telephone);
         loginUserDto.setPassword(password);
         userVo.setToken(jwtUserLogin.createToken(loginUserDto));
+        userVo.setUser(user1);
         return userVo;
     }
 
@@ -55,8 +60,14 @@ public class UserServiceImpl implements UserService {
                 .url(userDto.getUrl())
                 .userType(userDto.getUserType())
                 .username(userDto.getUserName())
+                .userStart(StatusType.NORMAL.getValue())
                 .build();
         userMapper.insert(build);
+    }
+
+    @Override
+    public void updateUserData(User user) {
+        userMapper.update(user, new QueryWrapper<User>().eq("UUID", user.getUuid()));
     }
 
 
@@ -74,7 +85,7 @@ public class UserServiceImpl implements UserService {
      * 检查用户登录名是否存在
      */
     public  void   isUserExist(String username ){
-        User user = userMapper.selectOne(new QueryWrapper<User>().select("username").eq("username",username));
+        User user = userMapper.selectOne(new QueryWrapper<User>().eq("telephone",username));
         if (StringUtils.isEmpty(user)){
             throw  new ExceptionResult("用户不存在，请先注册");
         }

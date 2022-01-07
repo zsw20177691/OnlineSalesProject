@@ -1,6 +1,6 @@
 #端口号
 server:
-       port: 8090
+       port: 8099
        servlet:
           context-path: /ImportanProject
 #输出mybatis日志

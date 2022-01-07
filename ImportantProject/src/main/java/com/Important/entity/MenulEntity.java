@@ -1,7 +1,6 @@
 package com.Important.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -15,7 +14,7 @@ import java.util.List;
 @Builder
 @ApiModel(value = "菜单对象")
 @TableName(value = "menul")
-public class Menul implements Serializable {
+public class MenulEntity implements Serializable {
     private static final long serialVersionUID = -1660119577352607201L;
 
     @ApiModelProperty(value = "菜单url")
@@ -27,5 +26,5 @@ public class Menul implements Serializable {
     private String  menuName;
 
     @TableField(exist = false)
-    private List<SecondaryMenu> secondaryMenus;
+    private List<SecondaryMenuEntity> secondaryMenuEntities;
 }

@@ -32,7 +32,7 @@ public class JwtUserLogin {
             map.put("typ","JWT");
             Algorithm algorithm = Algorithm.HMAC256(secret);
             return JWT.create().withHeader(map)
-                    .withClaim("username",loginUserDto.getUsername())
+                    .withClaim("telephone",loginUserDto.getTelephone())
                     .withJWTId(UUID.randomUUID().toString())
                     .withIssuedAt(new Date())//生成签名时间
                     .withExpiresAt(afterDate)//签名过期时间
@@ -61,5 +61,10 @@ public class JwtUserLogin {
     public String getUserName(String token) {
         DecodedJWT verify = verify(token);
         return verify.getClaim("username").asString();
+    }
+
+    public String getTelephone(String token) {
+        DecodedJWT verify = verify(token);
+        return verify.getClaim("telephone").asString();
     }
 }
