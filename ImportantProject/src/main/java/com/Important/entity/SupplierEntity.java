@@ -65,4 +65,12 @@ public class SupplierEntity implements Serializable {
     @TableField(value = "time")
     private LocalDateTime  applicationTime;
 
+    @ApiModelProperty("图片url")
+    @TableField(value = "picture_url")
+    private String  pictureUrl;
+
+    @ApiModelProperty("视频url")
+    @TableField(value = "video_url")
+    private String  videoUrl;
+
 }
