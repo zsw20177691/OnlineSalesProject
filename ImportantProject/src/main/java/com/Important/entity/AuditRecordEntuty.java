@@ -51,7 +51,7 @@ public class AuditRecordEntuty implements Serializable {
 
     @ApiModelProperty("用户申请成为供应商时间")
     @TableField(value = "supplier_time")
-    private String supplierTime;
+    private LocalDateTime supplierTime;
 
 
 }

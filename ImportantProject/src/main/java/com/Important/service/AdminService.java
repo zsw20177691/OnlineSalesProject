@@ -15,7 +15,7 @@ public interface AdminService {
      * @param pageSize
      * @return
      */
-    Page<SupplierEntity> querySupplierData(String startTime, String endTime, Integer page, Integer pageSize);
+    Page<SupplierEntity> querySupplierData(String startTime, String endTime, Integer page, Integer pageSize,Integer  isSee);
 
     /**
      * 管理员审核用户申请成为供应商信息

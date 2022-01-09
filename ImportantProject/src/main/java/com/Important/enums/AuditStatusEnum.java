@@ -24,7 +24,7 @@ public enum AuditStatusEnum {
      * @param value
      * @return
      */
-    public static AuditStatusEnum AuditStatusEnum(Integer value){
+    public static AuditStatusEnum getAuditStatusEnum(Integer value){
         AuditStatusEnum[] values = AuditStatusEnum.values();
         for (AuditStatusEnum val : values){
             if (val.value.equals(value)){
