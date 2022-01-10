@@ -2,9 +2,11 @@ package com.Important.service.serviceImpl;
 
 import com.Important.dto.LoginUserDto;
 import com.Important.dto.UserDto;
+import com.Important.entity.CommodityEntity;
 import com.Important.entity.User;
 import com.Important.enums.StatusType;
 import com.Important.enums.UserType;
+import com.Important.mapper.CommodityMapper;
 import com.Important.mapper.UserMapper;
 import com.Important.service.UserService;
 import com.Important.utils.*;
@@ -17,16 +19,24 @@ import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
+
     @Resource
     private JwtUserLogin    jwtUserLogin;
+
     @Resource
     private GlobalExceptionInterceptor globalExceptionInterceptor;
+
+    @Resource
+    private CommodityMapper commodityMapper;
 
 
 
@@ -35,6 +45,9 @@ public class UserServiceImpl implements UserService {
         UserVo userVo = new UserVo();
         isUserExist(telephone);
         User user1 = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", telephone).eq("password", password));
+        if (StringUtils.isEmpty(user1)){
+            throw  new ExceptionResult("密码错误，请重新输入");
+        }
         if (user1.getUserStart().equals(StatusType.INVALID.getValue())){
             throw new ExceptionResult("用户已失效");
         }
@@ -68,6 +81,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public void updateUserData(User user) {
         userMapper.update(user, new QueryWrapper<User>().eq("UUID", user.getUuid()));
+    }
+
+    @Override
+    public Map<String,Object> queryCommodityData(Integer commodityType, String tradeName, String supplierName, Integer page, Integer pageSize) {
+        Map<String, Object> hashMap = new HashMap<>();
+        List<CommodityEntity> commodityEntities = commodityMapper.queryCommodityData(commodityType, tradeName, supplierName, (page - 1) * pageSize, pageSize);
+        Integer integer = commodityMapper.queryCommodityDataCount(commodityType, tradeName, supplierName);
+        hashMap.put("data",commodityEntities);
+        hashMap.put("conut",integer);
+        return hashMap;
     }
 
 

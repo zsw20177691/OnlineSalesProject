@@ -1,5 +1,6 @@
 package com.Important.service;
 
+import com.Important.dto.CommodityDto;
 import com.Important.entity.SupplierEntity;
 
 public interface SupplierService {
@@ -8,4 +9,10 @@ public interface SupplierService {
      * @param supplierEntity
      */
     void becomeSupplier(SupplierEntity supplierEntity);
+
+    /**
+     * 供货商用户上传商品
+     * @param commodityDto
+     */
+    void goodsOnTheShelves(CommodityDto commodityDto);
 }

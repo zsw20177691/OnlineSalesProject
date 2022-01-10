@@ -1,5 +1,6 @@
 package com.Important.controller;
 
+import com.Important.dto.CommodityDto;
 import com.Important.entity.SupplierEntity;
 import com.Important.service.SupplierService;
 import com.Important.utils.ResponseUtil;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 
 @Api(tags = "供应商相关控制层")
 @RestController
@@ -35,4 +37,16 @@ public class SupplierController {
         supplierService.becomeSupplier(supplierEntity);
         return ResponseUtil.ok();
     }
+
+    /**
+     * 供货商用户上架商品
+     */
+
+    @ApiOperation("供货商用户上架商品")
+    @PostMapping("/GoodsOnTheShelves")
+    public ResultVO<T> goodsOnTheShelves(@RequestBody @Valid CommodityDto commodityDto){
+        supplierService.goodsOnTheShelves(commodityDto);
+        return ResponseUtil.ok();
+    }
+
 }

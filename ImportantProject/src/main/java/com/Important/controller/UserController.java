@@ -3,6 +3,7 @@ package com.Important.controller;
 
 import com.Important.dto.LoginUserDto;
 import com.Important.dto.UserDto;
+import com.Important.entity.CommodityEntity;
 import com.Important.entity.FileEntity;
 import com.Important.entity.User;
 import com.Important.service.UserService;
@@ -30,6 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 @Slf4j
@@ -102,6 +104,21 @@ public class UserController {
         return ResponseUtil.ok();
     }
 
+    @ApiOperation("用户查看商品列表")
+    @GetMapping("/QueryCommodityData")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "commodityType",value = "商品类型 0：粮油米面 1：农副加工 2：新鲜水果 3：肉蛋鲜蔬 4：其他产品",paramType = "query"),
+            @ApiImplicitParam(name = "tradeName",value = "商品名称",paramType = "query"),
+            @ApiImplicitParam(name = "supplierName",value = "供货商店铺名称",paramType = "query"),
+            @ApiImplicitParam(name = "page",value = "页码-默认为第一页",paramType = "query"),
+            @ApiImplicitParam(name = "pageSize",value = "每页条数-默认为第十页",paramType = "query"),
+    })
+    public ResultVO<Object>  queryCommodityData(@RequestParam(value = "commodityType",required = false)Integer  commodityType,
+        @RequestParam(value = "tradeName",required = false)String tradeName,@RequestParam(value = "supplierName",required = false)String supplierName,
+        @RequestParam(value = "page",required = false,defaultValue = "1")Integer  page,  @RequestParam(value = "pageSize",required = false,defaultValue = "10")Integer  pageSize){
+        Map<String, Object> map = userService.queryCommodityData(commodityType, tradeName, supplierName, page, pageSize);
+        return ResponseUtil.ok(map);
+    }
 
 
 }
