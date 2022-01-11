@@ -34,26 +34,26 @@ public class HandLerConfig implements HandlerInterceptor{
      */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)throws Exception {
-        try{
-            String token = request.getHeader("token");
-            if (token.isEmpty()){
-                return  false;
-            }
-            String userName = jwtUserLogin.getTelephone(token);
-            log.info("用户名"+userName);
-            User username = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", userName));
-            if (StringUtils.isEmpty(userName)){
-                return  false;
-            }
-            System.out.println("来自主机ip为"+request.getRemoteAddr()+"的"+request.getRequestURI()+"请求过来了");
-            return true;
-        }catch ( Exception e){
-            log.info(""+e);
-            onLoginFail(response);
-            return false;
-        }
-//        System.out.println("来自主机ip为"+request.getRemoteAddr()+"的"+request.getRequestURI()+"请求过来了");
-//        return true;
+//        try{
+//            System.out.println("来自主机ip为"+request.getRemoteAddr()+"的"+request.getRequestURI()+"请求过来了");
+//            String token = request.getHeader("token");
+//            if (token.isEmpty()){
+//                return  false;
+//            }
+//            String userName = jwtUserLogin.getTelephone(token);
+//            log.info("用户名"+userName);
+//            User username = userMapper.selectOne(new QueryWrapper<User>().eq("telephone", userName));
+//            if (StringUtils.isEmpty(userName)){
+//                return  false;
+//            }
+//            return true;
+//        }catch ( Exception e){
+//            log.info(""+e);
+//            onLoginFail(response);
+//            return false;
+//        }
+        System.out.println("来自主机ip为"+request.getRemoteAddr()+"的"+request.getRequestURI()+"请求过来了");
+        return true;
     }
 
     @Override

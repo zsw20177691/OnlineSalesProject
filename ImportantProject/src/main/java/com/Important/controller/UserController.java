@@ -67,7 +67,7 @@ public class UserController {
     )
     @PostMapping("/uploadFile")
     public void   uploadFile(@RequestParam("files") MultipartFile[]   files){
-        fileEntity.updatePath(files);
+        fileEntity.updatePath1(files);
         System.out.println("查看请求是否有相应");
     }
 

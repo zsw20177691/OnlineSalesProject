@@ -70,6 +70,6 @@ jwt:
   intervals: 1
   secret: Chen18173425291
 file:
-  updatePath: D:\ImportantProject\fileData\png\  #文件上传路径  C:/Users/86181/Desktop/qdupload/
-  viewPath: png #文件访问路径
+  updatePath: D:\OnlineSalesProject\ImportantProject\src\main\resources\fileData\file\  #文件上传路径  C:/Users/86181/Desktop/qdupload/
+  viewPath: fileData/file #文件访问路径
 
