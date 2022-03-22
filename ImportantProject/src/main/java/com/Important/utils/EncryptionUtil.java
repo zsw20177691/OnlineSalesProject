@@ -5,7 +5,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class EncryptionUtil {
+public class EncryptionUtil implements Runnable {
 
     /***
      * @Desc  对密码进行md5加密
@@ -26,4 +26,8 @@ public class EncryptionUtil {
         return md5Str;
     }
 
+    @Override
+    public void run() {
+
+    }
 }

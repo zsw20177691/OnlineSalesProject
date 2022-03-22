@@ -14,7 +14,7 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
-#创建数据源 ,加载数据库驱动
+  #创建数据源 ,加载数据库驱动
   datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://127.0.0.1:3306/importproject?useSSL=false&allowPublicKeyRetrieval=true&allowMultiQueries=true&serverTimezone=GMT%2B8
@@ -38,17 +38,24 @@ spring:
   jpa:
     database: 0;
   redis:
-    host:  127.0.0.1
+    host: 127.0.0.1
+    #Redis服务器连接端口
+    port:   6379
+    #Redis服务器连接密码（默认为空）
     password:
-    port: 6379
-    timeout: 10000m
     jedis:
       pool:
+        #连接池最大连接数（使用负值表示没有限制）
         max-active: 8
+        #连接池最大阻塞等待时间（使用负值表示没有限制）
         max-wait: -1m
+        #连接池中的最大空闲连接
         max-idle: 8
+        #连接池中的最小空闲连接
         min-idle: 0
-swagger:
+        #连接超时时间（毫秒）
+        timeout: 30000
+  swagger:
   enable: true
 mybatis-plus:
   configuration:
@@ -72,4 +79,6 @@ jwt:
 file:
   updatePath: D:\OnlineSalesProject\ImportantProject\src\main\resources\fileData\file\  #文件上传路径  C:/Users/86181/Desktop/qdupload/
   viewPath: fileData/file #文件访问路径
+
+
 

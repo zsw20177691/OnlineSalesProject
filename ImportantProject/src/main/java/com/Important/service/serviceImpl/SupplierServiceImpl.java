@@ -8,9 +8,13 @@ import com.Important.mapper.CommodityMapper;
 import com.Important.mapper.SupplierEntityMapper;
 import com.Important.service.SupplierService;
 import com.Important.utils.TimeFormatUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+
+import static java.lang.Thread.sleep;
 
 @Service
 public class SupplierServiceImpl    implements SupplierService {
@@ -44,4 +48,11 @@ public class SupplierServiceImpl    implements SupplierService {
                 .build();
         commodityMapper.insert(build);
     }
+
+    @Override
+    public void offShelfGoods(CommodityEntity commodityEntity) {
+        commodityMapper.update(commodityEntity,new QueryWrapper<CommodityEntity>().eq("commodity_id",commodityEntity.getCommodityId()));
+    }
+
+
 }

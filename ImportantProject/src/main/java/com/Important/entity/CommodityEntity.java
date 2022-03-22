@@ -1,9 +1,6 @@
 package com.Important.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -67,5 +64,11 @@ public class CommodityEntity implements Serializable {
     @ApiModelProperty("创建时间")
     @TableField("creation_time")
     private LocalDateTime creationTime;
+    /**
+     * 创建乐观锁
+     */
+    @Version
+    @ApiModelProperty("乐观锁版本号")
+    private int version;
 
 }
